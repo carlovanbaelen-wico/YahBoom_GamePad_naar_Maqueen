@@ -11,6 +11,7 @@ GHBit.onKey(GHBit.enButton.B2, function () {
     radio.sendNumber(6)
 })
 radio.setGroup(1)
+led.plot(0, 2)
 basic.forever(function () {
     if (GHBit.Rocker(GHBit.enRocker.Up)) {
         radio.sendNumber(1)
